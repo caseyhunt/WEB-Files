@@ -8,6 +8,16 @@
   #contactimg{
     display:block;
   }
+
+  #hero h1{
+    z-index:1;
+    color: #fff;
+    position: absolute;
+    margin-top:450px;
+    margin-left: 60px;
+    font-weight: 600;
+    font-size: 70px;
+  }
 }
 @media screen and (max-width: 700px){
 #portfolio{
@@ -19,6 +29,16 @@
 
 #contactimg{
   display:none;
+}
+
+#hero h1{
+  z-index:1;
+  color: #fff;
+  position: absolute;
+  margin-top:450px;
+  margin-left: 60px;
+  font-weight: 600;
+  font-size: 20px;
 }
 }
 
@@ -143,15 +163,7 @@ h1{
   font-size: 40px;
 }
 
-#hero h1{
-  z-index:1;
-  color: #fff;
-  position: absolute;
-  margin-top:450px;
-  margin-left: 60px;
-  font-weight: 600;
-  font-size: 70px;
-}
+
 
 p{
   font-family: arial;
