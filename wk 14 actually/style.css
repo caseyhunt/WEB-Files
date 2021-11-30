@@ -1,0 +1,12 @@
+section{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-auto: 50vh;
+  border: 3px pink solid;
+  column-gap: 50px;
+}
+
+div{
+  border: 5px green dotted;
+  padding:30px;
+}
