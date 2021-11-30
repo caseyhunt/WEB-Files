@@ -33,7 +33,7 @@ function setActive(e){
   if(e.target.tagName == "H2"){
     e.target.parentNode.classList.toggle("active");
   }else{
-    e.target.classList.toggle("active");
+    e.target
   }
 
   meal = document.getElementsByClassName('active')[0].id;
