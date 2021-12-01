@@ -1,0 +1,180 @@
+nav ul{
+  list-style-type: none;
+  margin: 20px 10vw 20px 0px;
+  height:20px;
+  /* to do: figure out dynamic font size and margins */
+  /* font-size: 4vw; */
+  padding: 0;
+  display:flex;
+  flex-direction:row;
+  justify-content: right;
+  float:right;
+  flex-wrap: nowrap;
+}
+
+nav li{
+  margin:0 10px 0 10px;
+}
+
+
+#header{
+padding-top:200px;
+padding-left:280px;
+height:150px;
+padding-right:50px;
+font-size:2.4vw;
+}
+
+@media only screen and (max-width:1000px){
+  #header{
+  padding-top:150px;
+  padding-left:10%;
+  font-size:3vw;
+  }
+
+  ul{
+    margin-right:10vw;
+  }
+
+  img{
+    width:100px;
+    height: 150px;
+    object-fit:cover;
+  }
+}
+
+@media only screen and (min-width:1900px){
+  #header{
+  padding-top:150px;
+  }
+
+  #banner{
+    margin:auto;
+  }
+
+  ul{
+    margin-right:20vw;
+  }
+
+  img{
+    width:100px;
+    height: 150px;
+    object-fit:cover;
+  }
+
+  #header{
+  padding-top:200px;
+  max-width:1600px;
+  margin:auto;
+  height:150px;
+  padding-right:14vw;
+  padding-left:16vw;
+  font-size:65px;
+  }
+
+}
+
+@media only screen and (min-width:2500px){
+  ul{
+    margin-right:34vw;
+  }
+}
+
+/* @media only screen and (min-width:2500px){
+  #header{
+  padding-top:150px;
+  padding-left:10%;
+  font-size:3vw;
+  }
+} */
+
+#projects{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content:center;
+  padding:5%;
+  max-width:1600px;
+  margin:auto;
+}
+
+.project{
+  margin-right:5%;
+  margin-top:10%;
+}
+
+img{
+  width:347px;
+  height:260px;
+  object-fit:cover;
+  border-radius:4px;
+
+}
+
+#mat{
+  object-position: 30% 0%;
+}
+
+#chris{
+  object-position:100% 30%;
+}
+
+#process{
+  object-position: 20% 0%;
+}
+
+footer{
+  margin-top: 10%;
+}
+
+.overlay{
+  z-index:1;
+  position: relative;
+  margin-top: -200px;
+  height: 85px;
+  width: 347px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.overlay h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  color: white;
+  font-size: 2rem;
+}
+.project:hover .overlay {
+  opacity: .85;
+}
+
+.active{
+  font-weight:bold;
+}
+
+.disabled{
+  display: none !important;
+}
+
+.projmodal{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.75);
+}
+
+.modal{
+  background-color: #fff;
+  position: fixed;
+  top:100px;
+  bottom:100px;
+  left:20vw;
+  right:20vw;
+  overflow-y: scroll;
+}
